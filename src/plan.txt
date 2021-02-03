@@ -1,0 +1,38 @@
+        Components:
+        App.js
+        Layout
+            Header
+                ✅Travel Advisory
+                Menu Container
+                    BookTrip Button
+                    Blog Link
+                    Island Map Link
+                    Icon with Link to Favorites
+                    Language Selector DropDown
+                    navbar
+                    Logo
+            Main 
+                Background Image
+                Overlay   
+                Itineraries
+                    Current Itinerary
+                    map
+                    Link to Alternate itineraries
+                    Gallery
+            Footer
+        
+        
+        
+        <div>
+            <header>HEADER: travel alert w/ Read More link, book trip button, links to blog and island map, heart icon with link to favorite page, dropdown box with language selector, navbar menu with logo, jumbotron image, </header>
+
+            <p>Itinerary Summary with favorite button overlaid on jumbotron, Itinerary Image Cards w/ links and favorite button,  and with Toggle btwn grid and listview</p>
+
+            <p>Google map with icons linking to Itinerary locations</p>
+
+            <p>Link to other itineraries w/ backgrnd image</p>
+
+            <p>Gallery with a Show More button</p>
+
+           <footer>Footer: mailing list form, links in 5 columns, social media icons, background image and logo, copyright</footer>
+        </div>

@@ -1,0 +1,25 @@
+.Footer{
+    background-color: #ffffff;
+    width: 100%;
+
+}
+
+.logomain {
+    position: relative;
+    margin: 50px 100px;
+    float:inherit;
+}
+
+.backgroundImage {
+    /* background-image: url(../../../../assets/images/kalinago-barana-aute.jpg); */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*height: 100vh;
+    display: block;
+    width: 100;
+    align-items: center;
+     */
+  
+}

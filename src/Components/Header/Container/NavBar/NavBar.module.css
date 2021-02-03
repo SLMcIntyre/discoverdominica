@@ -1,0 +1,11 @@
+.NavBar {
+    background-color: #ffffff;
+    display: flex;
+    color: #000000;
+    font-family:"Source Sans Pro", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 15px;
+    vertical-align: inherit;
+
+}

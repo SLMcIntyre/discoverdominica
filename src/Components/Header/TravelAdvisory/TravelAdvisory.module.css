@@ -1,0 +1,23 @@
+.TravelAdvisory {
+    background-color: #98C956;
+    padding: 1rem 0.5rem;
+    color: #fff;
+    height: 58px;
+    text-align: inherit;
+    /* margin-bottom: 50px; */
+
+}
+
+.TravelAlert {
+    vertical-align: inherit;
+}
+
+
+a {
+    font-family:"Source Sans Pro", sans-serif;
+    font-weight: bold;
+    padding-left: 15px;
+    vertical-align: inherit;
+
+
+}
