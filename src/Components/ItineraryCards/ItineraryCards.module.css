@@ -1,0 +1,19 @@
+.ItineraryCards {
+    vertical-align: middle;
+    padding-top: 1000px;
+    color: #000;
+}
+
+.imgWrapper {
+    overflow: hidden;
+}
+
+.img.hoverZoom {
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+
+.img.hoverZoom:hover {
+    transform: scale(1.25);
+}
+

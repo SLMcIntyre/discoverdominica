@@ -2,11 +2,13 @@ import React from 'react';
 import classes from '../Layout/Layout.module.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import ItineraryCards from '../ItineraryCards/ItineraryCards';
 
 const Layout = () => {
     return (
         <div className={classes.Layout}>
             <Header />
+            <ItineraryCards />
 
             <br></br>
             <br></br>

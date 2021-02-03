@@ -1,6 +1,7 @@
 .Jumbotron {
     color: #000000;
     text-align:left;
+    
    
 
 }
@@ -8,18 +9,34 @@
 .display {
     font-size:50px;
     text-align: left;
+
 }
 
-.backgroundImage {
+.overlay {
+    opacity: 0.5;
+}
+
+.overlay-content {
+    position: absolute;
+    text-align: left;
+    /* padding: 1rem; */
+    font-size: 50 px;;
+}
+
+.overlay overlay-primary {
+    background-color: rgb(49, 163, 157);
+}
+
+/* .backgroundImage {
     background-image: url(../../../../assets/images/diving-trips-itinerary.jpeg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     /*height: 100vh;
     display: block;
     width: 100;
     align-items: center;
      */
   
-}
+/* } */

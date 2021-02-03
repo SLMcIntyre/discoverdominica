@@ -10,7 +10,7 @@ const Footer = () => {
 
           <div className ="logo py-5 px-gutter"  >
               <div className ="d-flex flex-column">
-                  <img src= {logomain} alt= " " className= {logomain} width = '300px' /> 
+                  <img src= {logomain} alt= " " className={classes.logomain} width = '300px' /> 
               </div>
           </div>
         </div>

@@ -9,3 +9,8 @@
     vertical-align: inherit;
 
 }
+
+.navItemDropdown {
+    color: #000000;
+    display:flex;
+}

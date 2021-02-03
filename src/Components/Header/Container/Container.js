@@ -13,7 +13,7 @@ const Container = () => {
             <div className="container">
                 <div className="list">
                     <div className= "hero position-relative">
-                    <Button>BOOK A TRIP</Button>
+                    <Button a href="https://discoverdominica.bookdirect.net/#/lodgings?campaign=headerlink" target="_blank">BOOK A TRIP</Button>
                     <Navbar />
                     <Jumbotron />
 

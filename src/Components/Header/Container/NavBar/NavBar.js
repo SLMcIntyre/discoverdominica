@@ -1,16 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logomain from '../../../../assets/images/logo-main.png';
 import reefdiver from '../../../../assets/images/reefdiver.jpeg';
 import cruiseandsnorkel from '../../../../assets/images/cruise-and-snorkel.jpg';
+import wanderlust from '../../../../assets/images/wanderlust.jpeg';
 import classes from '../NavBar/NavBar.module.css';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 
-const Navbar = () => {
+function Navbar (props)  {
+    // constructor(props) {
+    //     super(props);
+
+    //     this.toggle = this.toggle.bind(this);
+    //     this.onMouseEnter = this.onMouseEnter.bind(this);
+    //     this.onMouseLeave = this.onMouseLeave.bind(this);
+    //     this.state = {
+    //         dropdownOpen: false
+    //     };
+    // }
+
+    // toggle() {
+    //     this.setState(prevState => ({
+    //         dropdownOpen: !prevState.dropdownOpen
+    //     }));
+    // }
+
+    // onMouseEnter() {
+    //     this.setState({dropdownOpen: true});
+    // }
+
+    // onMouseLeave() {
+    //     this.setState({dropdownOpen: false});
+    // }
+
+    // render () {
+
+    const [isOpen, updateIsOpen] = useState(false);
+
     return (
         <nav className={classes.NavBar}>
             <div>
             <ul>
-                <li className="nav-item dropdown">
+             
+                <li className={classes.navItemDropdown}>
+                <Dropdown
+                {...props}
+                onMouseOver={() => updateIsOpen(true)}
+                onFocus={() => updateIsOpen(true)}
+                onMouseLeave={() => updateIsOpen(false)}
+                onBlur={() => updateIsOpen(false)}
+                toggle={() => updateIsOpen(!isOpen)}
+                isOpen={isOpen} />
+
+                  {/* onMouseOver={this.onMouseEnter} 
+                 onMouseLeave={this.onMouseLeave}
+                  isOpen={this.state.dropdownOpen}
+                toggle={this.toggle} */}
+
                 <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="https://discoverdominica.com/en/dominica" role="button" aria-haspopup="true" aria-expanded="false">DOMINICA</a>
                 <div className="dropdown-menu">
                 <a className="dropdown-item" href="https://discoverdominica.com/en/history-culture">HISTORY & CULTURE</a>
@@ -25,7 +71,7 @@ const Navbar = () => {
 
             <ul>
                 <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="https://discoverdominica.com/en/dominica" role="button" aria-haspopup="true" aria-expanded="false">EXPERIENCES</a>
+                <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="https://discoverdominica.com/en/experiences" role="button" aria-haspopup="true" aria-expanded="false">EXPERIENCES</a>
                 <div className="dropdown-menu">
                 <a className="dropdown-item" href="https://discoverdominica.com/en/itineraries">ITINERARIES</a>
                 <a className="dropdown-item" href="https://discoverdominica.com/en/adventures">ADVENTURES</a>
@@ -45,31 +91,31 @@ const Navbar = () => {
             <div>
             <ul>
                 <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="https://discoverdominica.com/en/dominica" role="button" aria-haspopup="true" aria-expanded="false">FOOD AND LODGING</a>
+                <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="https://discoverdominica.com/en/accommodations" role="button" aria-haspopup="true" aria-expanded="false">FOOD AND LODGING</a>
                 <div className="dropdown-menu">
-                <a className="dropdown-item" href="https://discoverdominica.com/en/history-culture">HOTELS</a>
-                <a className="dropdown-item" href="https://discoverdominica.com/en/must-see-dominica">RESTAURANTS</a>
-                <a className="dropdown-item" href="https://discoverdominica.com/en/must-see-dominica">APARTMENTS</a>
-                <a className="dropdown-item" href="https://discoverdominica.com/en/must-see-dominica">COTTAGES</a>
-                <a className="dropdown-item" href="https://discoverdominica.com/en/must-see-dominica">GUEST HOUSES</a>
-                <div className="dropdown-image"> <img src= {reefdiver} alt= " " className = "reefdiver" /> 
+                <a className="dropdown-item" href="https://discoverdominica.com/en/hotels">HOTELS</a>
+                <a className="dropdown-item" href="https://discoverdominica.com/en/restaurants">RESTAURANTS</a>
+                <a className="dropdown-item" href="https://discoverdominica.com/en/apartments">APARTMENTS</a>
+                <a className="dropdown-item" href="https://discoverdominica.com/en/cottages">COTTAGES</a>
+                <a className="dropdown-item" href="https://discoverdominica.com/en/guesthouses">GUEST HOUSES</a>
+                <div className="dropdown-image"> <img src= {wanderlust} alt= " " className = "wanderlust" /> 
                 </div>
                 <p>FEATURED HOTEL</p>
-                <a className="featured-dropdown-item" href="https://discoverdominica.com/en/places/76/champagne-r%C3%A9cif">WANDERLUST CARIBBEAN</a>
+                <a className="featured-dropdown-item" href="https://discoverdominica.com/en/places/90/wanderlust-caribbean">WANDERLUST CARIBBEAN</a>
                 </div>
                 </li>
             </ul>
 
             <ul>
                 <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="https://discoverdominica.com/en/dominica" role="button" aria-haspopup="true" aria-expanded="false">GETTING HERE</a>
+                <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="https://discoverdominica.com/en/getting-here" role="button" aria-haspopup="true" aria-expanded="false">GETTING HERE</a>
                 <div className="dropdown-menu">
-                <a className="dropdown-item" href="https://discoverdominica.com/en/itineraries">TRAVEL ADVISORY</a>
-                <a className="dropdown-item" href="https://discoverdominica.com/en/adventures">AIRLINES</a>
-                <a className="dropdown-item" href="https://discoverdominica.com/en/tour-operators">CRUISE GUESTS</a>
-                <a className="dropdown-item" href="https://discoverdominica.com/en/events-calendar">ISLAND HOPPING/FERRIES</a>
-                <a className="dropdown-item" href="https://discoverdominica.com/en/events-calendar">ISLAND TRANSPORTATION</a>
-                <a className="dropdown-item" href="https://discoverdominica.com/en/events-calendar">USEFUL INFORMATION</a>
+                <a className="dropdown-item" href="https://discoverdominica.com/en/travel-advisory-for-dominica">TRAVEL ADVISORY</a>
+                <a className="dropdown-item" href="https://discoverdominica.com/en/airlines">AIRLINES</a>
+                <a className="dropdown-item" href="https://discoverdominica.com/en/cruise-guests">CRUISE GUESTS</a>
+                <a className="dropdown-item" href="https://discoverdominica.com/en/island-hoppingferries">ISLAND HOPPING/FERRIES</a>
+                <a className="dropdown-item" href="https://discoverdominica.com/en/island-transportation">ISLAND TRANSPORTATION</a>
+                <a className="dropdown-item" href="https://discoverdominica.com/en/useful-information">USEFUL INFORMATION</a>
                 </div>
                 </li>
             </ul>
